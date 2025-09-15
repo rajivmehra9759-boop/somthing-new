@@ -1,15 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+class myclass{
+    public:
+       myclass() {
+           cout<<"hello naman  ";
+
+       }
+};
+
 int main(){
-    int a,b;
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
-
-    // Swapping the values of a and b using + and -
-    a = a + b;
-    b = a - b;
-    a = a - b;
-
-    cout << "After swapping: a = " << a << ", b = " << b << endl;
-    return 0;
+    myclass obj;
+    return 0;   
 }
