@@ -1,13 +1,20 @@
 #include <stdio.h>
-int main() {
-    int arr[5] = {10,26,3,4,5};
-    int max = arr[0];
-    for(int i=1; i<5; i++) {
-        if(arr[i] > max) {
-            max = arr[i];
-        }
 
+int main()
+{
+    int arr[5] = {3, 12, 52, 34, 5};
+    int i = 0, a = 52;
+
+    while (i < 5)
+    {
+        if (arr[i] == a)
+        {
+            printf("Found at index: %d\n", i);
+            break;
+        }
+        else
+        {
+            i++;
+        }
     }
-    printf("The max value is %d\n", max);
-    return 0;
 }
